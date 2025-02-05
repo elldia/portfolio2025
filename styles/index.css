@@ -1,0 +1,78 @@
+body, html {scroll-behavior: smooth;}
+header {display:flex; align-items:center; justify-content:space-between; position:fixed; left:0; top:0; width:100%; height:70px; padding:0 20px; z-index:999; background: #fff;}
+header h1 {}
+header nav {display:flex; align-items: center;}
+header nav a {padding:0 30px; line-height:70px; border-bottom:4px solid #fff; transition: all 0.3s;}
+header nav a:hover, header nav a.active {border-bottom:4px solid #198fdd; color:#198fdd}
+header .contact {background:#198fdd; color:#fff; padding:7px 10px; border-radius: 5px;}
+/* =========================================================================================== */
+.wrap {width:1920px; height:max-content; height:100vh;}
+.wrap > .swiper-wrapper > .swiper-slide {padding-top:70px;}/* 공통 상단 여백(header 피하기) */
+.wrap #intro {background:#f5f5f5; position:relative;}
+.wrap #intro::after {background:#198fdd; content:''; display:block; width:100%; height:10px; position:absolute; bottom:0; left:0; z-index:999;}
+.wrap #intro .center {position:relative; height:100vh; text-align:center; padding-top:150px; overflow:hidden;}
+.wrap #intro .center p {font-size:1.5rem; text-decoration: underline;}
+.wrap #intro .center h1 {font-size:8rem; font-weight:500; line-height:0.7;}
+.wrap #intro .center h1 em {font-weight:900; font-size:13rem;}
+.wrap #intro .center .photo {width:700px; position:absolute; left:50%; bottom:0; transform:translateX(-50%); z-index:900;}
+.wrap #intro .center .ball {width:700px; height:700px; background-color: #198fdd; border-radius:50%; margin:0 auto; transform:translateY(-0px);}
+.wrap #intro .center .skill1,
+.wrap #intro .center .skill2 {position:absolute; z-index:100; border:1px solid #aaa; border-radius:5px;}
+.wrap #intro .center .skill1 {left:100px; top:30%; animation:skill 2s linear infinite alternate; filter: brightness(140%);}
+.wrap #intro .center .skill2 {right:100px; top:60%; animation:skill 3s linear infinite alternate-reverse; filter: brightness(120%);}
+.wrap #intro .btn {position:absolute; left:0; bottom:0; z-index:999; width:100%; text-align: center;}
+.wrap #intro .btn a {margin-bottom:30px; background-color: #fff; color:#198fdd; display:inline-block; width:300px; line-height:50px; text-align: center; font-size:1.2rem; font-weight:700; border-radius:5px; transition: all 0.5s;}
+.wrap #intro .btn a:hover {box-shadow:0 0 20px #fff;}
+.wrap #intro .btn .skill_bnr { animation:txt-bnr 20s infinite; background:#198fdd url(../images/text-bnr.jpg) repeat-x center; height:70px; width:100%; color:#fff; display:flex; align-items: center; padding:0 50px; justify-content: center;}
+/* ===========================================================================================공통 제목+내용 영역 */
+.wrap > .swiper-wrapper > .swiper-slide {background-color: #eee; color:#111;}
+.wrap > .swiper-wrapper > .swiper-slide .title {width:80%; margin: 100px auto 50px;}
+.wrap > .swiper-wrapper > .swiper-slide .title h2 {font-size:2rem; color: #198fdd; padding:0 0 10px;}
+.wrap > .swiper-wrapper > .swiper-slide .title h3 {font-size:3rem; font-weight:700;}
+.wrap > .swiper-wrapper > .swiper-slide .title h3 em {font-size:3rem; font-weight:700; color:#198fdd}
+.wrap > .swiper-wrapper > .swiper-slide .contents {width:80%; margin:0 auto; display:flex; gap:40px;}
+.wrap > .swiper-wrapper > .swiper-slide .contents li {background-color: rgba(255,255,255,0.6); text-align: center; padding:20px 40px 40px; border-radius:50px; display:flex; align-items:center; justify-content: center; flex-flow:column nowrap;}
+.wrap > .swiper-wrapper > .swiper-slide .contents li h3 {font-size:2rem; font-weight:700; margin:20px 0;}
+.wrap > .swiper-wrapper > .swiper-slide .contents li p {font-size:1.1rem; width:max-content; line-height: 1.5; color:#555;}
+/* ===========================================================================================profile */
+.wrap #profile1 .contents li {padding:0; width:33.33%;background-color: rgba(255,255,255,0.6); text-align: center; border-radius:100px; height:500px; display:flex; align-items:center; justify-content: center; flex-flow:column nowrap;}
+.wrap #profile1 .contents li img {width:150px;}
+.wrap #profile1 .contents li h3 {font-size:2rem; font-weight:700; margin:20px 0;}
+.wrap #profile1 .contents li p {font-size:1.1rem; width:60%; line-height: 1.5; color:#555;}
+/* ===========================================================================================profile2 */
+.wrap #profile2 .contents {flex-flow:row wrap;}
+.wrap #profile2 .contents li {height:max-content;}
+.wrap #profile2 .contents li p {width:100%; display:flex; justify-content: space-between; padding:0 0 10px;}
+.wrap #profile2 .contents li p span:first-child {margin-right:50px;}
+.wrap #profile2 .contents li p span:last-child {background:#f3f2e3; padding:5px;}
+.wrap #profile2 .contents li p span em {color: #198fdd;}
+.wrap #profile2 .contents li:last-child, .wrap #profile2 .contents li:nth-last-child(2) {transform:translateY(-85%)} /* license, profile 위로 올리기 */
+/* ===========================================================================================project1 */
+.wrap #project1 .contents {margin:50px auto 0;}
+.wrap #project1 .contents .web {width:90%; height:500px; background:aqua;}
+/* ===========================================================================================project2 */
+.wrap #project2 {}
+.wrap #project2 .contents {width:80%; margin:50px auto 0; display:block;}
+.wrap #project2 .contents .left {float:left; width:calc(100% - 450px)}
+.wrap #project2 .contents .design1 {width:100%; margin:0; height:150px; background:lime;  border-radius:10px;}
+.wrap #project2 .contents .design1 .swiper-wrapper {transition-timing-function: linear;}
+.wrap #project2 .contents .design2 {width:100%; margin:0; height:370px; background:aqua;  border-radius:10px;}
+.wrap #project2 .contents .design2 .swiper-wrapper {transition-timing-function: linear;}
+.wrap #project2 .contents .design3 {width:400px; height:700px; background:aqua; border-radius:10px;}
+.wrap #project2 .contents .swiper-slide img {width:100%;}
+/* .wrap #project2 .contents .design3 img {animation:design3img 20s infinite linear alternate;} */
+.wrap #project2 .contents .design3_set {float:right; width:400px; transform:translateY(-140px); position: relative;}
+.wrap #project2 .contents .design3_set .swiper-pagination {bottom:-30px; width:100%;}
+/* =========================================================================================== */
+@keyframes skill {
+    0% {transform:translateY(0)}
+    100% {transform:translateY(30px)}
+}
+@keyframes design3img {
+    0% {transform:translateY(0)}
+    100% {transform:translateY(-500px)}
+}
+@keyframes txt-bnr {
+    0% {background-position-x:0;}
+    100% {background-position-x:1000px;}
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 2025-이름작성하기</title>
+    <!-- scrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <!--swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- pretendard -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <!-- design -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/scroll.js" defer></script>
+</head>
+<body>
+    <!-- 참고사이트 https://www.behance.net/gallery/191411843/Personal-Portfolio-Website-Design-Figma-Web-Design?tracking_source=search_projects|webdesign+portfolio&l=1 -->
+    <header>
+        <!-- <h1><img src="./images/logo.png" alt=""></h1> -->
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Profile</a>
+            <a href="#">web-Projects</a>
+            <a href="#">Design</a>
+        </nav>
+        <a href="#" class="contact">Contact Me</a>
+    </header>
+    <div class="swiper wrap">
+        <div class="swiper-wrapper">
+            <!-- 인트로 소개영역 -->
+            <div class="swiper-slide" id="intro">
+                <div class="center">
+                    <p>안녕하세요!</p>
+                    <h1>I'm yuna<br><em>Web-Designer</em></h1>
+                    <img src="./images/model2.png" alt="" class="photo">
+                    <div class="ball"></div>
+                    <img src="./images/skill.png" alt="" class="skill1">
+                    <img src="./images/skill2.png" alt="" class="skill2">
+                </div>
+                <div class="btn">
+                    <a href="#">Portfolio</a>
+                    <div class="skill_bnr"></div>
+                </div>
+            </div>
+            <!-- 가능기술소개 -->
+            <div class="swiper-slide" id="profile1">
+                <div class="title">
+                    <h2>Hello!</h2>
+                    <h3>저는 이런 <em>디자인을 할 수 있어요!</em></h3>
+                </div>
+                <ul class="contents">
+                    <li>
+                        <img src="./images/icon1.png" alt="">
+                        <h3>UI/UX Design</h3>
+                        <p>클라이언트 먼저 고려하여 디자인을 진행하며 사용자에게 편리한 디자인을 하여 웹접근성, 웹표준을 지킬 수 있습니다.</p>
+                    </li>
+                    <li>
+                        <img src="./images/icon2.png" alt="">
+                        <h3>Web Design</h3>
+                        <p>클라이언트가 접속한 브라우저에 따라 크로스 브라우징에 대응하는 호환성 높고 완성도 높은 웹디자인을 할 수 있습니다.</p>
+                    </li>
+                    <li>
+                        <img src="./images/icon3.png" alt="">
+                        <h3>Responsive</h3>
+                        <p>반응형웹과 적응형웹을 다룰 수 있고 클라이언트가 어떤 디바이스로 접근하든 대응할 수 있는 능력이 있습니다.</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- 프로필 소개 -->
+            <div class="swiper-slide" id="profile2">
+                <div class="title">
+                    <h2>Nice to meet you!</h2>
+                    <h3>저는 <em>무한으로 발전하는</em> 인재입니다!</h3>
+                </div>
+                <ul class="contents">
+                    <li>
+                        <h3>Education</h3>
+                        <p><span><em>웹디자인&웹퍼블리셔</em>양성과정 수료</span><span>2024-2025</span></p>
+                        <p><span>한국대학교 <em>건축디자인과</em> 졸업</span><span>2022-2024</span></p>
+                    </li>
+                    <li>
+                        <h3>Contact</h3>
+                        <p><span><em>abc1234</em>@gmail.com</span><span>24시간!</span></p>
+                        <p><span>010-1234-<em>5678</em></span><span>대기중! 연락주세요</span></p>
+                    </li>
+                    <li>
+                        <h3>Skill</h3>
+                        <p><span>UIUX</span><span>사용자 리서치, 레퍼런스 조사분석가능</span></p>
+                        <p><span>photoshop</span><span>웹, 배너광고, 상세 디자인 제작 가능</span></p>
+                        <p><span>illustrator</span><span>로고, 캐릭터 디자인 제작 가능</span></p>
+                        <p><span>figma</span><span>UIUX 와이어프레임, 프로토타입 설계가능</span></p>
+                        <p><span>notion</span><span>개인공부 기록&팀원 업무협업가능</span></p>
+                        <p><span>gitHub</span><span>깃허브 코드저장소 활용가능</span></p>
+                        <p><span>HTML5</span><span>웹표준에 맞는 마크업설계가능</span></p>
+                        <p><span>CSS3</span><span>반응형웹부터 애니메이션까지 다양한 디자인 가능</span></p>
+                        <p><span>Javascript</span><span>웹 동적&애니메이션 설계가능</span></p>
+                        <p><span>Jquery</span><span>간단한 웹 동적기능 가능</span></p>
+                    </li>
+                    <li>
+                        <h3>license</h3>
+                        <p><span>2024 웹디자인 기능사</span><span>한국산업인력공단</span></p>
+                        <p><span>2022 GTQ 포토샵 <em>1급</em></span><span>한국산업인력공단</span></p>
+                        <p><span>2020 컴퓨터 그래픽스 운용기능사</span><span>한국산업인력공단</span></p>
+                        <p><span>2020 정보처리기능사</span><span>한국산업인력공단</span></p>
+                        <p><span>2020 토익 <em>850점</em></span><span>한국 TOEIC</span></p>
+                        <p><span>2018 운전면허증 2종 자동</span><span>서울지방경찰청</span></p>
+                    </li>
+                    <li>
+                        <h3>Profile</h3>
+                        <p><span>대한민국 경기도 부천시</span><span>❤</span></p>
+                        <p><span><em>ENFJ</em></span><span>MBTI</span></p>
+                        <p><span>여행, SNS, 사진찍기</span><span>HOBBY</span></p>
+                        <p><span>강아지, 고양이</span><span>LIKE</span></p>
+                        <p><span>풀스택 개발자</span><span>DREAM</span></p>
+                        <p><span><em>긍정적 노력파!</em></span><span>나를 한마디로?</span></p>
+                    </li>
+                </ul>
+            </div>
+            <!-- 웹프로젝트 소개 -->
+            <div class="swiper-slide" id="project1">
+                <div class="title">
+                    <h2>My Web Project</h2>
+                    <h3>저의 <em>웹디자인</em> 작품들을 소개합니다!</h3>
+                </div>
+                <div class="contents">
+                    <div class="swiper web">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide web1">1</div>
+                            <div class="swiper-slide web2">2</div>
+                            <div class="swiper-slide web3">3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 디자인 프로젝트 소개 -->
+            <div class="swiper-slide" id="project2">
+                <div class="title">
+                    <h2>My Design Project</h2>
+                    <h3>저의 <em>디자인</em> 작품들을 소개합니다!</h3>
+                </div>
+                <div class="contents" title="클릭 시 크게 보실 수 있어요!">
+                    <div class="left">
+                        <div class="swiper design1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide de1"><img src="./project/banner/banner1.jpg" alt=""></div>
+                                <div class="swiper-slide de2"><img src="./project/banner/banner2.jpg" alt=""></div>
+                                <div class="swiper-slide de3"><img src="./project/banner/banner3.jpg" alt=""></div>
+                                <div class="swiper-slide de4"><img src="./project/banner/banner4.jpg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="swiper design2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide de1"><img src="./project/sns/sns1.jpg" alt=""></div>
+                                <div class="swiper-slide de2"><img src="./project/sns/sns2.jpg" alt=""></div>
+                                <div class="swiper-slide de3"><img src="./project/sns/sns3.jpg" alt=""></div>
+                                <div class="swiper-slide de4"><img src="./project/sns/sns2.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design3_set">
+                        <div class="swiper design3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide de1"><img src="./project/detail/detail1.jpg" alt=""></div>
+                                <div class="swiper-slide de2"><img src="./project/detail/detail2.jpg" alt=""></div>
+                                <div class="swiper-slide de3"><img src="./project/detail/detail3.jpg" alt=""></div>
+                                <div class="swiper-slide de4"><img src="./project/detail/detail4.jpg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
