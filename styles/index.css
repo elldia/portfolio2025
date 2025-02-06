@@ -47,22 +47,46 @@ header .contact {background:#198fdd; color:#fff; padding:7px 10px; border-radius
 .wrap #profile2 .contents li p span:last-child {background:#f3f2e3; padding:5px;}
 .wrap #profile2 .contents li p span em {color: #198fdd;}
 .wrap #profile2 .contents li:last-child, .wrap #profile2 .contents li:nth-last-child(2) {transform:translateY(-85%)} /* license, profile 위로 올리기 */
-/* ===========================================================================================project1 */
+/* ===========================================================================================project1(web) */
 .wrap #project1 .contents {margin:50px auto 0;}
-.wrap #project1 .contents .web {width:90%; height:500px; background:aqua;}
-/* ===========================================================================================project2 */
+.wrap #project1 .contents .web {width:90%; height:500px; background:#fff;}
+.wrap #project1 .contents .web .swiper-slide {display:flex; align-items: center; justify-content: space-between; padding:0 50px;}
+.wrap #project1 .contents .web .swiper-slide .left {width:500px;}
+.wrap #project1 .contents .web .swiper-slide .left img {width:100%;}
+.wrap #project1 .contents .web .swiper-slide .right {width:calc(100% - 600px);}
+.wrap #project1 .contents .web .swiper-slide .right h1 {font-size:2rem; margin:0 0 30px;}
+.wrap #project1 .contents .web .swiper-slide .right h1 em {color: #198fdd; font-weight:700;}
+.wrap #project1 .contents .web .swiper-slide .right p {line-height:1.89; font-size:1.0rem; border-bottom:1px solid #eee; width:max-content}
+.wrap #project1 .contents .web .swiper-slide .right .btn {margin:20px 0 0; display:flex;}
+.wrap #project1 .contents .web .swiper-slide .right .btn a {font-size:1.1rem; background:#198fdd; color:#fff; padding:15px 20px; border-radius:5px; transition: all 0.3s;}
+.wrap #project1 .contents .web .swiper-slide .right .btn a:nth-child(2) {background-color: #222; margin:0 4px;}
+.wrap #project1 .contents .web .swiper-slide .right .btn a:nth-child(3) {background-color: #eee; color:#000;}
+.wrap #project1 .contents .web .swiper-slide .right .btn a:hover {box-shadow:0 0 10px rgba(0,0,0,0.2); padding-right:40px; transform-origin:left top;}
+/* ===========================================================================================project2(design) */
 .wrap #project2 {}
 .wrap #project2 .contents {width:80%; margin:50px auto 0; display:block;}
 .wrap #project2 .contents .left {float:left; width:calc(100% - 450px)}
-.wrap #project2 .contents .design1 {width:100%; margin:0; height:150px; background:lime;  border-radius:10px;}
+.wrap #project2 .contents .design1 {width:100%; margin:0; height:150px; background:#fff;  border-radius:10px;}
 .wrap #project2 .contents .design1 .swiper-wrapper {transition-timing-function: linear;}
-.wrap #project2 .contents .design2 {width:100%; margin:0; height:370px; background:aqua;  border-radius:10px;}
+.wrap #project2 .contents .design2 {width:100%; margin:0; height:370px; background:#fff;  border-radius:10px;}
 .wrap #project2 .contents .design2 .swiper-wrapper {transition-timing-function: linear;}
 .wrap #project2 .contents .design3 {width:400px; height:700px; background:aqua; border-radius:10px;}
-.wrap #project2 .contents .swiper-slide img {width:100%;}
+.wrap #project2 .contents .swiper-slide img {width:100%; transition: all 0.5s;}
+.wrap #project2 .contents .swiper-slide img:hover {transform:rotate(3deg)}/* 프로젝트 마우스 오버 효과 */
 /* .wrap #project2 .contents .design3 img {animation:design3img 20s infinite linear alternate;} */
 .wrap #project2 .contents .design3_set {float:right; width:400px; transform:translateY(-140px); position: relative;}
 .wrap #project2 .contents .design3_set .swiper-pagination {bottom:-30px; width:100%;}
+/* =========================================================================================== */
+.wrap #project2 .contents .popup_bg {
+    background: rgba(0,0,0,0.5);
+    position:fixed; left:0; top:0; z-index:999; width:100%; height:100vh;
+    /* padding-top:100px; */
+    display:flex; align-items: center;
+}
+.wrap #project2 .contents .popup_bg .popup {
+    width:700px; height:800px; overflow:auto; margin:0 auto; border-radius:5px;
+}
+.wrap #project2 .contents .popup_bg .popup img {width:100%;}
 /* =========================================================================================== */
 @keyframes skill {
     0% {transform:translateY(0)}
